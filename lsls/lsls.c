@@ -7,7 +7,12 @@
 int main(int argc, char **argv)
 {
   // Parse command line
-
+  char *input = "howdy";
+  if (argc > 1)
+  {
+    input = argv[1];
+  }
+  printf("%s\n", input);
   // Open directory
 
   // Repeatly read and print entries
